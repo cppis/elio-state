@@ -4,4 +4,4 @@ elio state repository for gitops
 <br/>
 
 ## [herald](herald/README.md)  
-herald is pub/sub sample using backing `emqx`  
+herald is a sample app to test pub/sub of backing `emqx` message broker.  

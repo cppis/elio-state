@@ -9,7 +9,8 @@ spec:
   type: {{ .Values.service.type }}
   ports:
     - port: {{ .Values.service.port }}
-      targetPort: t2p
+      targetPort: t2p #{{ .Values.service.port }} #
+      nodePort: {{ .Values.service.port }} #t2p
       protocol: TCP
       name: t2p
   selector:

@@ -44,25 +44,25 @@ securityContext:
 
 service:
   type: NodePort
-  port: 7000
+  port: 33133
 
 ingress:
   enabled: false
-  annotations:
-    {}
-    # kubernetes.io/ingress.class: nginx
-    # kubernetes.io/tls-acme: "true"
-  hosts:
-    - host: herald.local
-      paths:
-        - path: /
-          backend:
-            serviceName: herald.local
-            servicePort: 7000
-  tls: []
-  #  - secretName: chart-example-tls
-  #    hosts:
-  #      - chart-example.local
+#  annotations:
+#    {}
+#    # kubernetes.io/ingress.class: nginx
+#    # kubernetes.io/tls-acme: "true"
+#  hosts:
+#    - host: herald.local
+#      paths:
+#        - path: /
+#          backend:
+#            serviceName: herald.local
+#            servicePort: 7000
+#  tls: []
+#  #  - secretName: chart-example-tls
+#  #    hosts:
+#  #      - chart-example.local
 
 resources:
   {}
